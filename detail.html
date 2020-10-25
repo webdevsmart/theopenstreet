@@ -1,0 +1,1110 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>srtdash - ICO Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/metisMenu.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/slicknav.min.css">
+	<!-- Animate -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- amchart css -->
+	<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+	<!-- Start datatable css -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.jqueryui.min.css">
+	<!-- others css -->
+	<link rel="stylesheet" href="assets/css/typography.css">
+	<link rel="stylesheet" href="assets/css/default-css.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- Main Style -->
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<!-- modernizr css -->
+	<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+	<!-- preloader area start -->
+	<div id="preloader">
+		<div class="loader"></div>
+	</div>
+	<!-- preloader area end -->
+	<!-- page container area start -->
+	<div class="page-container">
+		<!-- sidebar menu area start -->
+		<div class="sidebar-menu">
+			<div class="sidebar-header">
+				<div class="logo">
+					<a href="index.html">TheOpenStreet</a>
+				</div>
+			</div>
+			<div class="main-menu">
+				<div class="menu-inner">
+					<nav>
+						<ul class="metismenu" id="menu">
+							<li class="active">
+								<a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>menu1</span></a>
+								<ul class="collapse">
+									<li class="active"><a href="index.html">submenu1</a></li>
+									<li><a href="javascript:void(0)">submenu2</a></li>
+									<li><a href="javascript:void(0)">submenu3</a></li>
+								</ul>
+							</li>
+							<li class="active">
+								<a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>menu2</span></a>
+								<ul class="collapse">
+									<li class="active"><a href="index.html">submenu1</a></li>
+									<li><a href="javascript:void(0)">submenu2</a></li>
+									<li><a href="javascript:void(0)">submenu3</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- sidebar menu area end -->
+		<!-- main content area start -->
+		<div class="main-content">
+			<!-- header area start -->
+			<div class="header-area">
+				<div class="row align-items-center">
+					<!-- nav and search button -->
+					<div class="col-md-6 col-sm-8 clearfix">
+						<div class="nav-btn pull-left">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="search-box pull-left">
+							<form action="#">
+								<input type="text" name="search" placeholder="Search..." required>
+								<i class="ti-search"></i>
+							</form>
+						</div>
+					</div>
+					<!-- profile info & task notification -->
+					<div class="col-md-6 col-sm-4 clearfix">
+						<ul class="notification-area pull-right">
+							<li id="full-view"><i class="ti-fullscreen"></i></li>
+							<li id="full-view-exit"><i class="ti-zoom-out"></i></li>
+							<li class="dropdown">
+								<i class="ti-bell dropdown-toggle" data-toggle="dropdown">
+									<span>2</span>
+								</i>
+								<div class="dropdown-menu bell-notify-box notify-box">
+									<span class="notify-title">You have 3 new notifications <a href="#">view
+											all</a></span>
+									<div class="nofity-list">
+										<a href="#" class="notify-item">
+											<div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
+											<div class="notify-text">
+												<p>You have Changed Your Password</p>
+												<span>Just Now</span>
+											</div>
+										</a>
+										<a href="#" class="notify-item">
+											<div class="notify-thumb"><i class="ti-comments-smiley btn-info"></i></div>
+											<div class="notify-text">
+												<p>New Commetns On Post</p>
+												<span>30 Seconds ago</span>
+											</div>
+										</a>
+										<a href="#" class="notify-item">
+											<div class="notify-thumb"><i class="ti-key btn-primary"></i></div>
+											<div class="notify-text">
+												<p>Some special like you</p>
+												<span>Just Now</span>
+											</div>
+										</a>
+										<a href="#" class="notify-item">
+											<div class="notify-thumb"><i class="ti-comments-smiley btn-info"></i></div>
+											<div class="notify-text">
+												<p>New Commetns On Post</p>
+												<span>30 Seconds ago</span>
+											</div>
+										</a>
+										<a href="#" class="notify-item">
+											<div class="notify-thumb"><i class="ti-key btn-primary"></i></div>
+											<div class="notify-text">
+												<p>Some special like you</p>
+												<span>Just Now</span>
+											</div>
+										</a>
+										<a href="#" class="notify-item">
+											<div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
+											<div class="notify-text">
+												<p>You have Changed Your Password</p>
+												<span>Just Now</span>
+											</div>
+										</a>
+										<a href="#" class="notify-item">
+											<div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
+											<div class="notify-text">
+												<p>You have Changed Your Password</p>
+												<span>Just Now</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="dropdown">
+								<i class="fa fa-envelope-o dropdown-toggle" data-toggle="dropdown"><span>3</span></i>
+								<div class="dropdown-menu notify-box nt-enveloper-box">
+									<span class="notify-title">You have 3 new notifications <a href="#">view
+											all</a></span>
+									<div class="nofity-list">
+										<a href="#" class="notify-item">
+											<div class="notify-thumb">
+												<img src="assets/images/author/author-img1.jpg" alt="image">
+											</div>
+											<div class="notify-text">
+												<p>Aglae Mayer</p>
+												<span class="msg">Hey I am waiting for you...</span>
+												<span>3:15 PM</span>
+											</div>
+										</a>
+										<a href="#" class="notify-item">
+											<div class="notify-thumb">
+												<img src="assets/images/author/author-img2.jpg" alt="image">
+											</div>
+											<div class="notify-text">
+												<p>Aglae Mayer</p>
+												<span class="msg">When you can connect with me...</span>
+												<span>3:15 PM</span>
+											</div>
+										</a>
+										<a href="#" class="notify-item">
+											<div class="notify-thumb">
+												<img src="assets/images/author/author-img3.jpg" alt="image">
+											</div>
+											<div class="notify-text">
+												<p>Aglae Mayer</p>
+												<span class="msg">I missed you so much...</span>
+												<span>3:15 PM</span>
+											</div>
+										</a>
+										<a href="#" class="notify-item">
+											<div class="notify-thumb">
+												<img src="assets/images/author/author-img4.jpg" alt="image">
+											</div>
+											<div class="notify-text">
+												<p>Aglae Mayer</p>
+												<span class="msg">Your product is completely Ready...</span>
+												<span>3:15 PM</span>
+											</div>
+										</a>
+										<a href="#" class="notify-item">
+											<div class="notify-thumb">
+												<img src="assets/images/author/author-img2.jpg" alt="image">
+											</div>
+											<div class="notify-text">
+												<p>Aglae Mayer</p>
+												<span class="msg">Hey I am waiting for you...</span>
+												<span>3:15 PM</span>
+											</div>
+										</a>
+										<a href="#" class="notify-item">
+											<div class="notify-thumb">
+												<img src="assets/images/author/author-img1.jpg" alt="image">
+											</div>
+											<div class="notify-text">
+												<p>Aglae Mayer</p>
+												<span class="msg">Hey I am waiting for you...</span>
+												<span>3:15 PM</span>
+											</div>
+										</a>
+										<a href="#" class="notify-item">
+											<div class="notify-thumb">
+												<img src="assets/images/author/author-img3.jpg" alt="image">
+											</div>
+											<div class="notify-text">
+												<p>Aglae Mayer</p>
+												<span class="msg">Hey I am waiting for you...</span>
+												<span>3:15 PM</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="settings-btn">
+								<i class="ti-settings"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- header area end -->
+			<!-- page title area start -->
+			<div class="page-title-area">
+				<div class="row align-items-center">
+					<div class="col-sm-6">
+						<div class="breadcrumbs-area clearfix">
+							<h4 class="page-title pull-left">Dashboard</h4>
+							<ul class="breadcrumbs pull-left">
+								<li><a href="index.html">Home</a></li>
+								<li><span>Dashboard</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 clearfix">
+						<div class="user-profile pull-right">
+							<img class="avatar user-thumb" src="assets/images/author/avatar.png" alt="avatar">
+							<h4 class="user-name dropdown-toggle" data-toggle="dropdown">Kumkum Rai <i class="fa fa-angle-down"></i>
+							</h4>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Message</a>
+								<a class="dropdown-item" href="#">Settings</a>
+								<a class="dropdown-item" href="#">Log Out</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- page title area end -->
+
+			<div class="main-content-inner">
+				<!-- company report start -->
+				<div class="research-report text-center mt-5 mb-5">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="mb-4 wow fadeInUp">Archer-Daniels-Midland Co Research Report<br> </h2>
+							<h2 class="mb-4 wow fadeInUp">48.97<br> </h2>
+							<div class="header-button wow fadeInUp" data-wow-delay="0.3s">
+								<a href=A.csv class="btn btn-common">Download Price Returns</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6 offset-3">
+							<div id="amlinechart1"></div>
+						</div>
+					</div>
+				</div>
+				<!-- company report end -->
+
+				<!-- company analysis start -->
+				<div class="company-analysis mt-5 mb-5">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="text-center mt-5 mb-4 wow fadeInUp">Company Analysis<br> </h2>
+						</div>
+					</div>
+					<div class="row pb-5">
+						<!-- Services item -->
+						<div class="col-md-6 col-lg-4 col-xs-12">
+							<div class="services-item wow fadeInRight" data-wow-delay="0.3s">
+								<div class="progress-wrap mb-4">
+									<div class="d-flex">
+										<div class="icon">
+											<h2>31%</h2>
+										</div>
+									</div>
+									<div class="progress rounded-0" style="height: 7px;">
+										<div class="progress-bar bg-" role="progressbar" style="width: 31.0%;" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="services-content">
+									<h3><a href="#">Company Health</a></h3>
+									<p>5 Yr Revenue growth is at <b>1.23%</b></p>
+									<p>Annualized Revenue Growth Uncertainty is at <b>7.95 %</b></p>
+									<p>5 Yr Average Profit Margin is at <b>14.04%</b>.</p>
+									<p>5 Yr Average Market Share Growth is at <b>-6.09%</b>.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Services item -->
+						<div class="col-md-6 col-lg-4 col-xs-12">
+							<div class="services-item wow fadeInRight" data-wow-delay="0.6s">
+								<div class="progress-wrap mb-4">
+									<div class="d-flex">
+										<div class="icon">
+											<h2>82%</h2>
+										</div>
+									</div>
+									<div class="progress rounded-0" style="height: 7px;">
+										<div class="progress-bar bg-" role="progressbar" style="width: 82.0%;" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="services-content">
+									<h3><a href="#">Company Yield</a></h3>
+									<p>5 Yr Average Dividend Yield is at <b>4.89%</b></p>
+									<p>5 Yr Average Earnings Yield is at <b>15.53%</b>.</p>
+									<p>5 Yr Average Payout Ratio is at <b>153.86%</b>.</p>
+									<p>5 Yr Average Free Cash Flow is at <b>0.78 bn</b>.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Services item -->
+						<div class="col-md-6 col-lg-4 col-xs-12">
+							<div class="services-item wow fadeInRight" data-wow-delay="0.9s">
+								<div class="progress-wrap mb-4">
+									<div class="d-flex">
+										<div class="icon">
+											<h2>53%</h2>
+										</div>
+									</div>
+									<div class="progress rounded-0" style="height: 7px;">
+										<div class="progress-bar bg-" role="progressbar" style="width: 53.0%;" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="services-content">
+									<h3><a href="#">Company Quality</a></h3>
+									<p>5 Yr Average Debt/Equity is at <b>1.04</b></p>
+									<p>5 Yr Average Return on Invested Capital is at <b>22.37%</b>
+									<p>5 Yr Average Growth in ROE is at <b>15.34%</b></p>
+									<p>Annualized ROE Growth Uncertainty is at <b>35.94%</b></p>
+								</div>
+							</div>
+						</div>
+						<!-- Services item -->
+						<div class="col-md-6 col-lg-4 col-xs-12">
+							<div class="services-item wow fadeInRight" data-wow-delay="1.2s">
+								<div class="icon">
+									<h2><a href="#">27</a></h2>
+								</div>
+								<div class="services-content">
+									<h3><a href="#">Industry Rank</a></h3>
+									<p>Profitability rank in industry is <b>10 of 115</b></p>
+									<p>Value rank in industry is <b>12 of 115</b></p>
+									<p>Quality rank in industry is <b>67 of 123</b></p>
+								</div>
+							</div>
+						</div>
+						<!-- Services item -->
+						<div class="col-md-6 col-lg-4 col-xs-12">
+							<div class="services-item wow fadeInRight" data-wow-delay="1.5s">
+								<div class="icon">
+									<h2><a href="#">10/20</a></h2>
+								</div>
+								<div class="services-content">
+									<h3><a href="#">Fair Value</a></h3>
+									<p>Fair Value by Dividend Discount Model adjusted for growth and volatility is <b>nan</b></p>
+									<p>Fair Value by Free Cash Flow Model adjusted for growth and volatility is <b>250.1</b></p>
+								</div>
+							</div>
+						</div>
+						<!-- Services item -->
+						<div class="col-md-6 col-lg-4 col-xs-12">
+							<div class="services-item wow fadeInRight" data-wow-delay="1.8s">
+								<div class="icon">
+									<h2><a href="#">15/30</a></h2>
+								</div>
+								<div class="services-content">
+									<h3><a href="#">Risk</a></h3>
+									<p>Annualized Volatility is <b>29.72%</b></p>
+									<p>Max Drawdown is <b>45.23%</b></p>
+									<p>Correlation with Market is <b>0.83</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- company analysis end -->
+
+				<!-- insider analysis start -->
+				<div class="insder-analysis">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="title-hl text-center wow fadeInLeft" data-wow-delay="0.3s">Insider Analysis</h2>
+							<div class="features-box wow fadeInLeft" data-wow-delay="0.3s">
+								<div class="col-md-6 col-lg-4 col-xs-12 offset-lg-4 offset-md-3">
+									<div class="progress-wrap mb-4">
+										<div class="d-flex">
+											<div align="center" class="icon">
+												<h2>65%</h2>
+											</div>
+										</div>
+										<div class="progress rounded-0" style="height: 7px;">
+											<div class="progress-bar bg-" role="progressbar" style="width: 65.0%;" aria-valuenow="80"
+												aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="features-content mb-5">
+								<h4 class="text-center">
+									Insider Trades - Buy
+								</h4>
+								<div class="single-table d-flex n-items-center justify-content-center" style="overflow-x:auto;">
+									<table align="center" class="table table-striped" style="max-width: 1000px;">
+										<thead>
+											<tr>
+												<th>Trade Date</th>
+												<th>Title</th>
+												<th>Price</th>
+												<th>Value (mn $)</th>
+												<th>Type</th>
+												<th>Strike Price</th>
+												<th>Expiration</th>
+											</tr>
+										</thead>
+
+										<tr>
+											<td>2019-11-21</td>
+											<td>CEO and President</td>
+											<td>79.29</td>
+											<td>12.92</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-11-21</td>
+											<td>CEO and President</td>
+											<td>79.29</td>
+											<td>4.79</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-11-21</td>
+											<td>Sr. Vice President</td>
+											<td>79.29</td>
+											<td>3.4</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2020-08-03</td>
+											<td>CEO and President</td>
+											<td>39.12</td>
+											<td>2.84</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-11-21</td>
+											<td>Sr. Vice President</td>
+											<td>79.29</td>
+											<td>2.4</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-11-21</td>
+											<td>Sr. Vice President</td>
+											<td>79.29</td>
+											<td>2.36</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-11-21</td>
+											<td>Senior Vice President</td>
+											<td>79.29</td>
+											<td>2.12</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-11-21</td>
+											<td>Sr Vice President</td>
+											<td>79.29</td>
+											<td>1.48</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-11-21</td>
+											<td>SVP General Counsel and Sec.</td>
+											<td>79.29</td>
+											<td>1.48</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-11-21</td>
+											<td>Sr. VP and CFO</td>
+											<td>79.29</td>
+											<td>1.12</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6 offset-3">
+							<div class="mb-5" id="amlinechart2"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="features-content">
+								<h4><br>
+								</h4>
+								<h4 class="text-center"> Insider Trades - Sell </h4>
+								<div class="d-flex n-items-center justify-content-center" style="overflow-x:auto;">
+									<table align="center" class="table table-striped" style="max-width: 1000px;">
+										<thead>
+											<tr>
+												<th>Trade Date</th>
+												<th>Title</th>
+												<th>Price</th>
+												<th>Value (mn $)</th>
+												<th>Type</th>
+												<th>Strike Price</th>
+												<th>Expiration</th>
+											</tr>
+										</thead>
+
+										<tr>
+											<td>2020-08-03</td>
+											<td>CEO and President</td>
+											<td>95.764</td>
+											<td>6.96</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-11-15</td>
+											<td>CEO and President</td>
+											<td>77.16</td>
+											<td>5.93</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2020-08-03</td>
+											<td>CEO and President</td>
+											<td>39.12</td>
+											<td>2.84</td>
+											<td>Employee Stock Option (Right to Buy)</td>
+											<td>39.12</td>
+											<td>2023-11-19 00:00:00</td>
+										</tr>
+
+										<tr>
+											<td>2019-12-13</td>
+											<td>CEO and President</td>
+											<td>82.9</td>
+											<td>2.04</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-12-13</td>
+											<td>CEO and President</td>
+											<td>80.0</td>
+											<td>1.97</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-09-16</td>
+											<td>CEO and President</td>
+											<td>77.5</td>
+											<td>1.91</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2020-05-11</td>
+											<td>CEO and President</td>
+											<td>80.0</td>
+											<td>1.44</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-01-31</td>
+											<td>CEO and President</td>
+											<td>75.0</td>
+											<td>1.31</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-02-25</td>
+											<td>Sr. Vice President</td>
+											<td>77.95</td>
+											<td>1.28</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+										<tr>
+											<td>2019-12-12</td>
+											<td>Senior Vice President</td>
+											<td>82.846</td>
+											<td>1.24</td>
+											<td>Common Stock</td>
+											<td>None</td>
+											<td>None</td>
+										</tr>
+
+									</table>
+
+									<div class="mb-5" id="amlinechart3"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- insider analysis end -->
+
+				<!-- institutional analysis start -->
+				<div class="institutional-analysis">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="title-hl text-center wow fadeInLeft" data-wow-delay="0.3s">Institutional Analysis</h2>
+							<div class="features-box wow fadeInLeft" data-wow-delay="0.3s">
+								<div class="col-md-6 col-lg-4 col-xs-12 offset-lg-4 offset-md-3">
+									<div class="progress-wrap mb-4">
+										<div class="d-flex">
+											<div align="center" class="icon">
+												<h1>39%</h1>
+											</div>
+										</div>
+										<div class="progress rounded-0" style="height: 7px;">
+											<div class="progress-bar bg-" role="progressbar" style="width: 39.0%;" aria-valuenow="80"
+												aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="features-content mb-5">
+								<h4 class="text-center">
+									Aggregate Institutional Holdings
+								</h4>
+								<div class="d-flex align-items-center justify-content-center" style="overflow-x:auto;">
+									<table align="center" class="table table-striped" style="max-width: 1000px;">
+										<thead>
+											<tr>
+												<th>Date</th>
+												<th>Security Type</th>
+												<th>Holding (mn $)</th>
+											</tr>
+										</thead>
+
+										<tr>
+											<td>2020-09-30</td>
+											<td>SHR</td>
+											<td>66.5</td>
+										</tr>
+
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6 offset-3">
+							<div class="mb-5" id="amlinechart4"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="features-content">
+								<h4><br>
+								</h4>
+								<h4 class="text-center"> Top 10 Institutions </h4>
+								<div class="d-flex justify-content-center" style="overflow-x:auto;">
+									<table align="center" class="table table-striped" style="max-width: 1000px;">
+										<thead>
+											<tr>
+												<th>Date</th>
+												<th>Investor Name</th>
+												<th>Security Type</th>
+												<th>Holding (mn $)</th>
+												<th>Units</th>
+												<th>Price</th>
+											</tr>
+										</thead>
+
+										<tr>
+											<td>2020-09-30</td>
+											<td>ENVESTNET ASSET MANAGEMENT INC</td>
+											<td>SHR</td>
+											<td>25.92</td>
+											<td>256741</td>
+											<td>100.0</td>
+										</tr>
+
+										<tr>
+											<td>2020-09-30</td>
+											<td>STATE OF ALASKA DEPARTMENT OF REVENUE</td>
+											<td>SHR</td>
+											<td>17.78</td>
+											<td>176120</td>
+											<td>100.0</td>
+										</tr>
+
+										<tr>
+											<td>2020-09-30</td>
+											<td>NORMAN FIELDS GOTTSCHO CAPITAL MANAGEMENT LLC</td>
+											<td>SHR</td>
+											<td>5.01</td>
+											<td>49600</td>
+											<td>100.0</td>
+										</tr>
+
+										<tr>
+											<td>2020-09-30</td>
+											<td>FRUTH INVESTMENT MANAGEMENT</td>
+											<td>SHR</td>
+											<td>4.7</td>
+											<td>46601</td>
+											<td>100.0</td>
+										</tr>
+
+										<tr>
+											<td>2020-09-30</td>
+											<td>CROSSMARK GLOBAL HOLDINGS INC</td>
+											<td>SHR</td>
+											<td>2.59</td>
+											<td>25631</td>
+											<td>100.0</td>
+										</tr>
+
+										<tr>
+											<td>2020-09-30</td>
+											<td>FIRST HAWAIIAN BANK</td>
+											<td>SHR</td>
+											<td>1.26</td>
+											<td>12496</td>
+											<td>100.0</td>
+										</tr>
+
+										<tr>
+											<td>2020-09-30</td>
+											<td>ASSENAGON ASSET MANAGEMENT SA</td>
+											<td>SHR</td>
+											<td>1.17</td>
+											<td>11561</td>
+											<td>100.0</td>
+										</tr>
+
+										<tr>
+											<td>2020-09-30</td>
+											<td>CHESLEY TAFT ASSOCIATES LLC</td>
+											<td>SHR</td>
+											<td>1.05</td>
+											<td>10394</td>
+											<td>100.0</td>
+										</tr>
+
+										<tr>
+											<td>2020-09-30</td>
+											<td>USA FINANCIAL PORTFORMULAS CORP</td>
+											<td>SHR</td>
+											<td>1.03</td>
+											<td>10256</td>
+											<td>100.0</td>
+										</tr>
+
+										<tr>
+											<td>2020-09-30</td>
+											<td>REDPOINT INVESTMENT MANAGEMENT PTY LTD</td>
+											<td>SHR</td>
+											<td>0.93</td>
+											<td>9226</td>
+											<td>100.0</td>
+										</tr>
+
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- institutional analysis end -->
+			</div>
+		</div>
+
+	</div>
+
+	<!-- main content area end -->
+	<!-- footer area start-->
+	<footer>
+		<div class="footer-area">
+			<p>© Copyright 2018. All right reserved.
+			</p>
+		</div>
+	</footer>
+	<!-- footer area end-->
+	</div>
+	<!-- page container area end -->
+	<!-- offset area start -->
+	<div class="offset-area">
+		<div class="offset-close"><i class="ti-close"></i></div>
+		<ul class="nav offset-menu-tab">
+			<li><a class="active" data-toggle="tab" href="#activity">Activity</a></li>
+			<li><a data-toggle="tab" href="#settings">Settings</a></li>
+		</ul>
+		<div class="offset-content tab-content">
+			<div id="activity" class="tab-pane fade in show active">
+				<div class="recent-activity">
+					<div class="timeline-task">
+						<div class="icon bg1">
+							<i class="fa fa-envelope"></i>
+						</div>
+						<div class="tm-title">
+							<h4>Rashed sent you an email</h4>
+							<span class="time"><i class="ti-time"></i>09:35</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
+						</p>
+					</div>
+					<div class="timeline-task">
+						<div class="icon bg2">
+							<i class="fa fa-check"></i>
+						</div>
+						<div class="tm-title">
+							<h4>Added</h4>
+							<span class="time"><i class="ti-time"></i>7 Minutes Ago</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur.
+						</p>
+					</div>
+					<div class="timeline-task">
+						<div class="icon bg2">
+							<i class="fa fa-exclamation-triangle"></i>
+						</div>
+						<div class="tm-title">
+							<h4>You missed you Password!</h4>
+							<span class="time"><i class="ti-time"></i>09:20 Am</span>
+						</div>
+					</div>
+					<div class="timeline-task">
+						<div class="icon bg3">
+							<i class="fa fa-bomb"></i>
+						</div>
+						<div class="tm-title">
+							<h4>Member waiting for you Attention</h4>
+							<span class="time"><i class="ti-time"></i>09:35</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
+						</p>
+					</div>
+					<div class="timeline-task">
+						<div class="icon bg3">
+							<i class="ti-signal"></i>
+						</div>
+						<div class="tm-title">
+							<h4>You Added Kaji Patha few minutes ago</h4>
+							<span class="time"><i class="ti-time"></i>01 minutes ago</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
+						</p>
+					</div>
+					<div class="timeline-task">
+						<div class="icon bg1">
+							<i class="fa fa-envelope"></i>
+						</div>
+						<div class="tm-title">
+							<h4>Ratul Hamba sent you an email</h4>
+							<span class="time"><i class="ti-time"></i>09:35</span>
+						</div>
+						<p>Hello sir , where are you, i am egerly waiting for you.
+						</p>
+					</div>
+					<div class="timeline-task">
+						<div class="icon bg2">
+							<i class="fa fa-exclamation-triangle"></i>
+						</div>
+						<div class="tm-title">
+							<h4>Rashed sent you an email</h4>
+							<span class="time"><i class="ti-time"></i>09:35</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
+						</p>
+					</div>
+					<div class="timeline-task">
+						<div class="icon bg2">
+							<i class="fa fa-exclamation-triangle"></i>
+						</div>
+						<div class="tm-title">
+							<h4>Rashed sent you an email</h4>
+							<span class="time"><i class="ti-time"></i>09:35</span>
+						</div>
+					</div>
+					<div class="timeline-task">
+						<div class="icon bg3">
+							<i class="fa fa-bomb"></i>
+						</div>
+						<div class="tm-title">
+							<h4>Rashed sent you an email</h4>
+							<span class="time"><i class="ti-time"></i>09:35</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
+						</p>
+					</div>
+					<div class="timeline-task">
+						<div class="icon bg3">
+							<i class="ti-signal"></i>
+						</div>
+						<div class="tm-title">
+							<h4>Rashed sent you an email</h4>
+							<span class="time"><i class="ti-time"></i>09:35</span>
+						</div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="settings" class="tab-pane fade">
+				<div class="offset-settings">
+					<h4>General Settings</h4>
+					<div class="settings-list">
+						<div class="s-settings">
+							<div class="s-sw-title">
+								<h5>Notifications</h5>
+								<div class="s-swtich">
+									<input type="checkbox" id="switch1" />
+									<label for="switch1">Toggle</label>
+								</div>
+							</div>
+							<p>Keep it 'On' When you want to get all the notification.</p>
+						</div>
+						<div class="s-settings">
+							<div class="s-sw-title">
+								<h5>Show recent activity</h5>
+								<div class="s-swtich">
+									<input type="checkbox" id="switch2" />
+									<label for="switch2">Toggle</label>
+								</div>
+							</div>
+							<p>The for attribute is necessary to bind our custom checkbox with the input.</p>
+						</div>
+						<div class="s-settings">
+							<div class="s-sw-title">
+								<h5>Show your emails</h5>
+								<div class="s-swtich">
+									<input type="checkbox" id="switch3" />
+									<label for="switch3">Toggle</label>
+								</div>
+							</div>
+							<p>Show email so that easily find you.</p>
+						</div>
+						<div class="s-settings">
+							<div class="s-sw-title">
+								<h5>Show Task statistics</h5>
+								<div class="s-swtich">
+									<input type="checkbox" id="switch4" />
+									<label for="switch4">Toggle</label>
+								</div>
+							</div>
+							<p>The for attribute is necessary to bind our custom checkbox with the input.</p>
+						</div>
+						<div class="s-settings">
+							<div class="s-sw-title">
+								<h5>Notifications</h5>
+								<div class="s-swtich">
+									<input type="checkbox" id="switch5" />
+									<label for="switch5">Toggle</label>
+								</div>
+							</div>
+							<p>Use checkboxes when looking for yes or no answers.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- offset area end -->
+	<!-- jquery latest version -->
+	<script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+	<!-- bootstrap 4 js -->
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/metisMenu.min.js"></script>
+	<script src="assets/js/jquery.slimscroll.min.js"></script>
+	<script src="assets/js/jquery.slicknav.min.js"></script>
+	<script src="assets/js/jquery.easing.min.js"></script>
+
+	<!-- start chart js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+	<!-- start highcharts js -->
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<!-- start zingchart js -->
+	<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+	<script>
+		zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];
+	</script>
+	<!-- start amchart js -->
+	<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+	<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+	<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+	<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+	<!-- all line chart activation -->
+	<script src="assets/js/line-chart.js"></script>
+	<!-- all pie chart -->
+	<script src="assets/js/pie-chart.js"></script>
+	<!-- Start datatable js -->
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+	<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+	<script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+	<script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+	<!-- others plugins -->
+	<script src="assets/js/wow.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
